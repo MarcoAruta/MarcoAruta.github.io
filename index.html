@@ -15,12 +15,17 @@
         #profilo {
             width: 300px;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fff5ee; /* Imposta la colorazione Ecrù per il box */
             border-radius: 10px;
             box-shadow: 10px 10px 15px rgba(0,0,0,0.2); /* Aggiunge un'ombra al box */
             transform: perspective(600px) rotateY(1deg); /* Aggiunge un effetto 3D */
             text-align: center;
         }
+        #sottofoto {
+        font-style: italic; /* Imposta il testo in corsivo */
+        font-family: Arial, sans-serif; /* Imposta il font del testo */
+        color: #555; /* Imposta il colore del testo */
+    }
         #profilo img.profile-img {
             width: 100px;
             height: 100px;
@@ -42,6 +47,10 @@
         .logo:hover {
             transform: scale(0.9);
         }
+        
+        a[href^="mailto"] {
+            color: #0077cc; 
+        }
     </style>
 </head>
 <body>
@@ -51,6 +60,8 @@
         <p><img class="icon" src="cap.png" alt="book">Computer Science Master Degree</p>
         <p><img class="icon" src="pc.png" alt="computer">AI Specialist</p>
         <p><img class="icon" src="mail.png" alt="mail"><a href="mailto:marco.aruta3@gmail.com">marco.aruta3@gmail.com</a></p>
+        <p id="sottofoto">Passionate about AI, solving complex problems, and continuous learning.</p> <!-- Aggiungi l'id "sottofoto" e la frase desiderata -->
+
         <div>
             <a href="https://www.linkedin.com/in/marco-aruta-85826229a/" target="_blank"><img class="logo" src="round.png" alt="LinkedIn"></a>
             <a href="https://github.com/MarcoAruta" target="_blank"><img class="logo" src="github.png" alt="GitHub"></a>
