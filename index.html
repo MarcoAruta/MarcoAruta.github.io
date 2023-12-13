@@ -49,7 +49,11 @@
         }
         
         a[href^="mailto"] {
-            color: #0077cc; 
+            color: #0077cc; /*  colore del link per l'invio di email di un azzurro più leggero */
+            transition: transform 0.3s; /* Aggiunge l'effetto di transizione al ridimensionamento */
+        }
+        a[href^="mailto"]:hover {
+            transform: scale(0.9); /* Applica l'effetto di ridimensionamento al passaggio del mouse */
         }
     </style>
 </head>
