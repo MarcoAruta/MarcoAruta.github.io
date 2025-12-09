@@ -172,6 +172,15 @@
       <div class="timeline" id="timeline"></div>
     </section>
 
+    <!-- SOFTWARE PROJECTS -->
+    <section id="software">
+    <div class="section-head">
+    <h2>Software Projects</h2>
+    <div class="hint">Tools, frameworks, and applications developed</div>
+    </div>
+    <div class="timeline" id="softwareTimeline"></div>
+    </section>
+
     <!-- ACTIVITIES (dinamico) -->
     <section id="attivita">
       <div class="section-head">
@@ -209,10 +218,14 @@
 ];
 
     const milestones = [
-      { date: "Nov 2024", title: "Inizio Dottorato — ITEE (40° ciclo)", desc: "Ricerca su metodi formali per lo strategic reasoning multi‑agente." },
-      { date: "2024", title: "Integrazione ATL in Unreal Engine 5", desc: "Modulo di model checking dinamico per decision‑making in tempo reale." },
-      { date: "2023", title: "Pubblicazione su ambienti di gioco dinamici", desc: "Primo articolo su ATL per gaming frameworks." },
-    ];
+{ date: "Dec 2025", title: "Invited Speaker — OXCAV, Oxford University", desc: "Talk on natural strategies and Human-Compatible Strategic AI." },
+{ date: "Jun 2025", title: "Conference Chair & Speaker — Medicina & AI: Oggi e Domani", desc: "Chaired and presented at a major conference on AI in healthcare." },
+{ date: "Oct 2024 – Oct 2025", title: "Research Manager — INFANT Project (MUSA Program)", desc: "Led research on pediatric oncology digital infrastructures at University of Naples Federico II." },
+{ date: "Oct 2024", title: "Invited Speaker — Consiglio dell'Ordine degli Avvocati di Napoli", desc: "Talk on AI-assisted family allowance calculation." },
+{ date: "Mar 2024 – Mar 2025", title: "Research Fellow — University of Naples Federico II", desc: "Worked on formal methods for multi-agent strategic reasoning and resilient strategies." },
+{ date: "Dec 2023", title: "Master's Degree in Computer Science", desc: "Thesis on NatATL and verification tools for natural strategies. Supervisor: Prof. Aniello Murano." },
+{ date: "Mar 2021", title: "Bachelor's Degree in Computer Science", desc: "University of Naples Federico II, Italy." }
+];
 
     const activities = [
       { title: "Corso: Uso etico e responsabile dell'IA", when: "2024–2025", tags: ["didattica","etica","IA"], desc: "8 lezioni su implicazioni etiche, sociali e legali dell'IA con attività pratiche." },
@@ -254,6 +267,36 @@
         el.innerHTML = `<time>${m.date}</time><div style="font-weight:600">${m.title}</div><div class="muted">${m.desc}</div>`;
         timeline.appendChild(el);
       })
+    }
+
+    // ====== SOFTWARE PROJECTS DATA ======
+    const software = [
+    { date: "Dec 2025", title: "LexiCoord: Multi-Agent Game for Lexical Ambiguity Resolution", desc: "Web-based multi-agent tool for semantic alignment between humans and LLMs via real-time coordination mechanisms." },
+    { date: "Nov 2025", title: "Web App for Dementia Prediction", desc: "Firebase-based platform for real-time patient tracking and dementia risk evaluation." },
+    { date: "Mar 2025", title: "Medical Surveys Web App", desc: "Real-time voting and survey platform for medical conferences with live analytics." },
+    { date: "Feb 2025", title: "Strategy Checker for Concurrent Games", desc: "Tool integrating natural strategies with LTL objectives; includes Sure Winning and IsNash checks." },
+    { date: "Jan 2025", title: "LCNN — Leukemia Detection CNN", desc: "EfficientNetV2B3-based classifier achieving 96.87% accuracy and 0.97 F1-score on 15k images." },
+    { date: "Dec 2024", title: "NatSL[1G] Model Checker", desc: "Model checker for NatSL[1G], a fragment of Natural Strategy Logic with imperfect information." },
+    { date: "Jul 2024", title: "FindMe — Dynamic CTL Model Checking in Unreal Engine", desc: "Framework for CTL verification in Unreal Engine using Blueprints." },
+    { date: "May 2024", title: "Memoryful NatATL Module — VITAMIN", desc: "Extension of NatATL enabling the first practical implementation of human-like reasoning in MAS verification." },
+    { date: "Apr 2024", title: "ATL Model Checking Framework in Unreal Engine", desc: "ATL model checker prototype integrated in UE Blueprints." },
+    { date: "Feb 2024", title: "CTL Module for VITAMIN", desc: "Extension enabling CTL formula verification within the VITAMIN MAS verification tool." },
+    { date: "Dec 2023", title: "Memoryless NatATL Module — VITAMIN", desc: "First implementation of Memoryless NatATL within VITAMIN for human reasoning emulation." },
+    { date: "Apr 2022", title: "Artificial Neural Network for MNIST Classification", desc: "Neural network for multi-class classification on MNIST dataset." },
+    { date: "Jan 2021", title: "Back-End Web-App for Accommodation Management", desc: "Platform for organizing and managing lodging services." },
+    { date: "Dec 2020", title: "Android Travel Recommendation App", desc: "Mobile app allowing users to search, view, and review travel accommodations." }
+    ];
+    
+    
+    function renderSoftware(){
+    const container = document.getElementById('softwareTimeline');
+    container.innerHTML = '';
+    software.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'mile';
+    el.innerHTML = `<time>${s.date}</time><div style='font-weight:600'>${s.title}</div><div class='muted'>${s.desc}</div>`;
+    container.appendChild(el);
+    });
     }
 
     // ====== ACTIVITIES + FILTRI ======
