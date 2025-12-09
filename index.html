@@ -166,8 +166,8 @@
     <!-- MILESTONES / TIMELINE -->
     <section id="milestones">
       <div class="section-head">
-        <h2>Milestones</h2>
-        <div class="hint">Academic and professional milestones</div>
+        <h2>Carreer</h2>
+        <div class="hint">Academic and professional carreer</div>
       </div>
       <div class="timeline" id="timeline"></div>
     </section>
@@ -218,21 +218,46 @@
 ];
 
     const milestones = [
-{ date: "Dec 2025", title: "Invited Speaker — OXCAV, Oxford University", desc: "Talk on natural strategies and Human-Compatible Strategic AI." },
-{ date: "Jun 2025", title: "Conference Chair & Speaker — Medicina & AI: Oggi e Domani", desc: "Chaired and presented at a major conference on AI in healthcare." },
-{ date: "Oct 2024 – Oct 2025", title: "Research Manager — INFANT Project (MUSA Program)", desc: "Led research on pediatric oncology digital infrastructures at University of Naples Federico II." },
-{ date: "Oct 2024", title: "Invited Speaker — Consiglio dell'Ordine degli Avvocati di Napoli", desc: "Talk on AI-assisted family allowance calculation." },
-{ date: "Mar 2024 – Mar 2025", title: "Research Fellow — University of Naples Federico II", desc: "Worked on formal methods for multi-agent strategic reasoning and resilient strategies." },
-{ date: "Dec 2023", title: "Master's Degree in Computer Science", desc: "Thesis on NatATL and verification tools for natural strategies. Supervisor: Prof. Aniello Murano." },
-{ date: "Mar 2021", title: "Bachelor's Degree in Computer Science", desc: "University of Naples Federico II, Italy." }
+{ date: "Nov 2024 – Present", title: "PhD Student — ITEE (40th Cycle)", desc: "Research in formal methods and strategic reasoning at the University of Naples Federico II." },
+{ date: "Oct 2024 – Oct 2025", title: "Research Manager — INFANT Project (MUSA Program)", desc: "Management and coordination of research for pediatric oncology digital infrastructure." },
+{ date: "Mar 2024 – Mar 2025", title: "Research Fellow — University of Naples Federico II", desc: "Research on multi-agent strategic reasoning and resilient strategies." },
+{ date: "Dec 2023", title: "Master's Degree in Computer Science", desc: "Thesis on Natural Strategic Reasoning and NatATL verification tools." },
+{ date: "Mar 2021", title: "Bachelor's Degree in Computer Science", desc: "University of Naples Federico II." }
 ];
 
     const activities = [
-      { title: "Corso: Uso etico e responsabile dell'IA", when: "2024–2025", tags: ["didattica","etica","IA"], desc: "8 lezioni su implicazioni etiche, sociali e legali dell'IA con attività pratiche." },
-      { title: "Talk: Medicina e IA — Oggi e Domani", when: "2025", tags: ["talk","healthcare"], desc: "Intervento sulle opportunità dell'IA in ambito sanitario." },
-      { title: "Ricerca: NatATL implementation", when: "ongoing", tags: ["ricerca","logiche","multi‑agente"], desc: "Alternanza di strategie esistenziali e universali per il model checking." },
-      { title: "BrainJuice — Rome", when: "2025", tags: ["talk","divulgazione"], desc: "Invitato per un talk su upper bounds cognitivi e AI." },
-    ];
+// Invited Talks & Program Committees
+{ title: "Invited Speaker — OXCAV, Oxford University", when: "Dec 2025", tags: ["talk","research","international"], desc: "Invited to discuss natural strategies and Human-Compatible Strategic AI." },
+{ title: "AAMAS 2026 Program Committee", when: "Dec 2025", tags: ["pc","review","mas","ai"], desc: "Reviewer for AAMAS 2026 and AAMAS Demo Track, evaluating AI and MAS research papers." },
+{ title: "AAAI 2026 Program Committee", when: "Aug 2025", tags: ["pc","review","ai"], desc: "Reviewer for AAAI 2026, providing evaluation and feedback on submissions." },
+
+
+// Teaching & Professorships
+{ title: "Big Data Architectures Professor", when: "May–Jun 2025", tags: ["teaching","bigdata","education"], desc: "Delivered a 36-hour course covering Data Warehousing, Hadoop, Spark, and Databricks, culminating in a predictive modeling project." },
+{ title: "Coding & Robotics Professor", when: "Oct 2024 – Feb 2025", tags: ["teaching","robotics","education"], desc: "Taught programming, HRI, and autonomous robot navigation in a 30-hour high-school program." },
+{ title: "Ethical Use of AI Professor", when: "Sep–Dec 2024", tags: ["teaching","ethics","ai"], desc: "Delivered a 24-hour course for teachers on AI ethics, automation, and responsible AI." },
+{ title: "Quantum Computing Professor (BeGear Program)", when: "Sep 2024", tags: ["teaching","quantum","education"], desc: "Designed and taught an introductory course in Quantum Computing for developers." },
+{ title: "Python & HTML Coding Lab Professor", when: "Apr 2024", tags: ["teaching","coding","web"], desc: "Delivered a programming laboratory within the national innovation project 'Zero Secondi al Futuro'." },
+
+
+// Conference Roles & Organization
+{ title: "Conference Chair & Speaker — Medicina & IA", when: "Jun 2025", tags: ["conference","healthcare","ai"], desc: "Chaired and presented at a major conference on AI applications in healthcare." },
+{ title: "BrainJuice Rome — Invited Speaker", when: "Mar 2025", tags: ["talk","neuroscience","research"], desc: "Presented work on human-like AI decision-making and the S4H synthesis tool." },
+{ title: "CSL'24 Organizing Committee Member", when: "Jan–Feb 2024", tags: ["organization","logic","conference"], desc: "Helped organize major events including FICS 2024, EACSL CSL 2024, and the Logic Mentoring Workshop." },
+{ title: "EUMAS 2023 Organizing Committee Member", when: "Aug–Sep 2023", tags: ["organization","mas","conference"], desc: "Coordinated the 20th European Conference on Multi-Agent Systems and managed the conference website." },
+
+// Supervision
+{ title: "Bachelor's Thesis Co-Supervisor", when: "Jun 2024", tags: ["supervision","education","gaming"], desc: "Guided students on Unreal Engine model checking for videogame verification." },
+{ title: "Master's Thesis Co-Supervisor", when: "Apr 2024", tags: ["supervision","research","gaming"], desc: "Supervised master students on formal verification applied to videogames in Unreal Engine." },
+
+
+// Industry & Applied Work
+{ title: "PNRM Project — Grant Support", when: "Nov 2025", tags: ["industry","military","project"], desc: "Supported grant proposal with technical development for smart drone usage in military scenarios through AI." },
+{ title: "MASE Project — Grant Support", when: "Sep 2025", tags: ["industry","energy","project"], desc: "Supported winning grant proposal with technical development for smart energetic usage in cities through AI." },
+{ title: "INFANT Project — MUSA Grant Support", when: "Mar 2024", tags: ["industry","healthcare","project"], desc: "Supported winning grant proposal with technical development for a pediatric oncology digital network infrastructure." },
+{ title: "Development of Pricing Intelligence System", when: "Jun 2024", tags: ["industry","ai","data"], desc: "Built predictive models for optimal pricing, integrating semantic data, demand trends, and price elasticity." },
+{ title: "Internship — Datacenter Hybrid Solutions Architect", when: "Jul 2020 – Feb 2021", tags: ["internship","hpc","infrastructure"], desc: "Analyzed HPC network configuration and monitored Mellanox network devices." }
+];
 
     // ====== PUBBLICAZIONI (render + search) ======
     const pubList = document.getElementById('pubList');
